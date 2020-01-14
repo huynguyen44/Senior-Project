@@ -14,6 +14,8 @@ import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import {MatCardModule} from '@angular/material';
 
+import {ShowHidePasswordModule} from 'ngx-show-hide-password';
+
 
 @NgModule({
   declarations: [
@@ -23,6 +25,7 @@ import {MatCardModule} from '@angular/material';
   ],
   imports: [
     FormsModule,
+    ShowHidePasswordModule,
     ReactiveFormsModule,
     BrowserModule,
     AppRoutingModule,

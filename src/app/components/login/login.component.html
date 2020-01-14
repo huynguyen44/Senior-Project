@@ -2,7 +2,7 @@
 
   <mat-card class="box">
     <mat-card-header>
-      <mat-card-title>Log in</mat-card-title>
+      <mat-card-title>Login</mat-card-title>
     </mat-card-header>
 
     <form class="example-form">
@@ -12,10 +12,18 @@
         </mat-form-field>
 
         <mat-form-field class="example-full-width">
-          <input matInput placeholder="Password">
+          <input id="userPassword"
+                 type="password"
+                 matInput placeholder="Password"
+                 showHideInput>
+          <i matSuffix
+             class="material-icons"
+             showHideTrigger="userPassword"
+             [showHideStatus]="{materialIcon: true, id: 'userPassword'}"
+          ></i>
         </mat-form-field>
       </mat-card-content>
-      <button mat-stroked-button color="accent" class="btn-block">Log in</button>
+      <button mat-stroked-button color="accent" class="btn-block">Login</button>
     </form>
   </mat-card>
 
